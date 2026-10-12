@@ -1,0 +1,1 @@
+{"id":32,"positions":[{"t":"ARKK","v":75396.83,"e":89.6262,"p":67.7447}],"cash":0.0,"trades":[{"d":"2021-01-04","t":"ARKK","s":"BUY","v":100000.0,"p":89.6262,"f":250.0,"k":"entry","pl":null,"why":"Day one: initial portfolio. New position at 100.0% of the portfolio. Holds every asset that passes its filters, each in an equal slot of 100.0%."}]}

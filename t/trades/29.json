@@ -1,0 +1,1 @@
+{"id":29,"positions":[{"t":"TQQQ","v":405767.21,"e":15.1039,"p":61.4404}],"cash":0.0,"trades":[{"d":"2021-01-04","t":"TQQQ","s":"BUY","v":100000.0,"p":15.1039,"f":250.0,"k":"entry","pl":null,"why":"Day one: initial portfolio. New position at 100.0% of the portfolio. Holds every asset that passes its filters, each in an equal slot of 100.0%."}]}

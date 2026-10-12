@@ -1,0 +1,1 @@
+{"id":74,"positions":[{"t":"VLUE","v":276771.79,"e":54.356,"p":150.8192}],"cash":0.0,"trades":[{"d":"2021-01-04","t":"VLUE","s":"BUY","v":100000.0,"p":54.356,"f":250.0,"k":"entry","pl":null,"why":"Day one: initial portfolio. New position at 100.0% of the portfolio. Holds every asset that passes its filters, each in an equal slot of 100.0%."}]}
