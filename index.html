@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <style>
 :root{--bg:#05060d;--panel:#0b0e1c;--line:#1c2240;--text:#e6ecff;--mute:#8a93b8;
- --cyan:#22e4ff;--magenta:#ff3df2;--lime:#7dff4f;--amber:#ffb627;--up:#3dffa0;--dn:#ff4d6d;color-scheme:dark}
+ --cyan:#22e4ff;--magenta:#ff3df2;--lime:#7dff4f;--amber:#ffb627;--violet:#a78bfa;--up:#3dffa0;--dn:#ff4d6d;color-scheme:dark}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#05060d;--panel:#0b0e1c;--text:#e6ecff}}
 :root[data-theme="dark"]{--bg:#05060d;--panel:#0b0e1c;--text:#e6ecff}
 *{box-sizing:border-box}html,body{margin:0;height:100%}
@@ -34,7 +34,7 @@ main{flex:1;position:relative;min-height:0}
 .card{--c:var(--cyan);background:linear-gradient(160deg,#0f1328,var(--panel));border:1px solid var(--line);border-top:3px solid var(--c);
  border-radius:14px;padding:16px;cursor:pointer;transition:.18s;display:flex;flex-direction:column}
 .card:hover,.card:focus{transform:translateY(-3px);border-color:var(--c);box-shadow:0 0 24px color-mix(in srgb,var(--c) 40%,transparent);outline:none}
-.cyan{--c:var(--cyan)}.magenta{--c:var(--magenta)}.lime{--c:var(--lime)}.amber{--c:var(--amber)}
+.cyan{--c:var(--cyan)}.magenta{--c:var(--magenta)}.lime{--c:var(--lime)}.amber{--c:var(--amber)}.violet{--c:var(--violet)}
 .tag{font-size:10px;letter-spacing:.18em;color:var(--c)}
 .card h2{font:700 21px "Chakra Petch",sans-serif;margin:4px 0 2px}
 .sub{color:var(--mute);font-size:12px;margin:0 0 12px}
@@ -59,6 +59,7 @@ main{flex:1;position:relative;min-height:0}
   <button role="tab" data-tab="d" style="--c:var(--magenta)"><span class="dot"></span>Day Arena</button>
   <button role="tab" data-tab="s" style="--c:var(--lime)"><span class="dot"></span>Stocks Bot</button>
   <button role="tab" data-tab="c" style="--c:var(--amber)"><span class="dot"></span>Crypto Bot</button>
+  <button role="tab" data-tab="l" style="--c:var(--violet)"><span class="dot"></span>Strategy Lab</button>
  </nav>
 </header>
 <main>
@@ -76,24 +77,29 @@ main{flex:1;position:relative;min-height:0}
   <ul><li><span class="rk">#1</span><span class="nm">Opening Bell Gap Chaser</span><span class="v up">+218%</span></li><li><span class="rk">#2</span><span class="nm">Gap &amp; Go 2x</span><span class="v up">+117%</span></li><li><span class="rk">#3</span><span class="nm">Gap &amp; Go Trailer</span><span class="v up">+70%</span></li></ul><span class="open">Open dashboard ›</span>
 </article>
 <article class="card lime" data-go="s" tabindex="0" role="button" aria-label="Open Stocks Paper Bot">
-  <div class="tag">LIVE PAPER · WEEKDAYS 17:47</div><h2>Stocks Paper Bot</h2><p class="sub">Momentum vs FTSE All-World (VWRL) · prices to 2026-10-15</p>
-  <div class="stats"><div><b>+83%</b><span>Bot backtest</span></div><div><b>+97%</b><span>VWRL</span></div><div><b>-30%</b><span>Max DD</span></div></div>
-  <ul><li><span class="rk">#1</span><span class="nm">Bot final (from £100k)</span><span class="v up">£182k</span></li><li><span class="rk">#2</span><span class="nm">VWRL final</span><span class="v up">£197k</span></li><li><span class="rk">#3</span><span class="nm">Sharpe bot / VWRL</span><span class="v ">0.62 / 0.98</span></li></ul><span class="open">Open dashboard ›</span>
+  <div class="tag">LIVE PAPER · WEEKDAYS 17:47</div><h2>Stocks Paper Bot</h2><p class="sub">Momentum vs FTSE All-World (VWRL) · prices to 2026-10-16</p>
+  <div class="stats"><div><b>+82%</b><span>Bot backtest</span></div><div><b>+96%</b><span>VWRL</span></div><div><b>-30%</b><span>Max DD</span></div></div>
+  <ul><li><span class="rk">#1</span><span class="nm">Bot final (from £100k)</span><span class="v up">£181k</span></li><li><span class="rk">#2</span><span class="nm">VWRL final</span><span class="v up">£196k</span></li><li><span class="rk">#3</span><span class="nm">Sharpe bot / VWRL</span><span class="v ">0.62 / 0.97</span></li></ul><span class="open">Open dashboard ›</span>
 </article>
 <article class="card amber" data-go="c" tabindex="0" role="button" aria-label="Open Crypto Paper Bot">
   <div class="tag">LIVE PAPER · DAILY 00:20 UTC</div><h2>Crypto Paper Bot</h2><p class="sub">Trend + momentum vs holding BTC · as of 2026-10-15</p>
   <div class="stats"><div><b>-2.9%</b><span>Live return</span></div><div><b>3</b><span>Positions</span></div><div><b>1</b><span>Pending buys</span></div></div>
   <ul><li><span class="rk">#1</span><span class="nm">Buy AVAX next run</span><span class="v up">+39.9% 30d</span></li></ul><span class="open">Open dashboard ›</span>
+</article>
+<article class="card violet" data-go="l" tabindex="0" role="button" aria-label="Open Strategy Lab">
+  <div class="tag">RESEARCH · 2005→NOW</div><h2>Strategy Lab</h2><p class="sub">963 strategies, held-out test from 2017 (crypto 2021) · 2026-10-16</p>
+  <div class="stats"><div><b>3</b><span>Promote</span></div><div><b>17</b><span>Watch</span></div><div><b>963</b><span>Tested</span></div></div>
+  <ul><li><span class="rk">#1</span><span class="nm">BTC days 0-540 after halving + 365d before</span><span class="v up">+48%/yr</span></li><li><span class="rk">#2</span><span class="nm">BTC 50-day average with 2% band</span><span class="v up">+34%/yr</span></li><li><span class="rk">#3</span><span class="nm">BTC above 50-day average (daily)</span><span class="v up">+32%/yr</span></li></ul><span class="open">Open dashboard ›</span>
 </article></div>
   <div class="note">Backtests use hindsight-picked universes for tech names, so judge traders by their edge over the random-monkey baseline. No real money is traded anywhere here.</div>
  </div></section>
  <section class="pane" id="p-t"></section><section class="pane" id="p-d"></section>
- <section class="pane" id="p-s"></section><section class="pane" id="p-c"></section>
+ <section class="pane" id="p-s"></section><section class="pane" id="p-c"></section><section class="pane" id="p-l"></section>
 </main>
 <script>
 const tabs=[...document.querySelectorAll('nav button')];
 function show(k){
-  if(!['home','t','d','s','c'].includes(k))k='home';
+  if(!['home','t','d','s','c','l'].includes(k))k='home';
   tabs.forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===k));
   document.querySelectorAll('.pane').forEach(p=>p.classList.toggle('on',p.id===(k==='home'?'home':'p-'+k)));
   if(k!=='home'){const p=document.getElementById('p-'+k);
